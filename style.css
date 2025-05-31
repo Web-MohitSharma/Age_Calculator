@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background:linear-gradient(135deg, #4203a9,#90bafc);
+    height: 100vh;
+}
+
+.container{
+    padding: 6% 8%;
+    width: 100%;
+    max-width: 700px;
+}
+.container h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    border-bottom: 5px solid #d5b70d ;
+}
+.container h1 span{
+    color: #d5b70d;
+    font-weight: 600;
+    font-size: 50px;
+}
+.date-container{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgb(255,255,255,0.3);
+    border-radius: 6px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.date-container input{
+    height: 40px;
+    width: 100%;
+    padding: 8px 25px;
+    font-size: .9rem;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    flex: 1;
+    position: relative;
+}
+.date-container input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+    height: auto;
+}
+.date-container button{
+    padding: 13px 20px;
+    background-color: #d5b70d;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#result{
+    color: #fff;
+    font-weight: 300;
+    margin-top: 60px;
+}
+#result span {
+    color: #ffff76;
+}
