@@ -19,7 +19,7 @@ function calculateAge(){
 
     y3 = y2 - y1;
     if(m2 >= m1){
-        m3 = m1 - m2
+        m3 = m2 - m1;
     }else{
         y3--;
         m3 = 12 + m2 - m1;
@@ -29,7 +29,7 @@ function calculateAge(){
     }
     else{
         m3--;
-        d3 = getDaysInMonth(y1,y2) + d2 -d1;
+        d3 = getDaysInMonth(y1,m2) + d2 -d1;
     }
     if(m3 < 0){
         m3 = 11;
